@@ -12,3 +12,15 @@ all_thing_is_obj(ft_dict)
 all_thing_is_obj("Brian")
 
 print(all_thing_is_obj(10))
+
+
+print("\nmy own test:")
+class TestThisClass:
+    pass
+
+all_thing_is_obj(None);
+somethiing = TestThisClass()
+all_thing_is_obj(somethiing)
+
+
+all_thing_is_obj(False)
