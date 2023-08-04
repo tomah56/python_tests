@@ -1,0 +1,6 @@
+README.md
+setup.py
+bobpack.egg-info/PKG-INFO
+bobpack.egg-info/SOURCES.txt
+bobpack.egg-info/dependency_links.txt
+bobpack.egg-info/top_level.txt
