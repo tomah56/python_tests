@@ -17,6 +17,9 @@ This function checks the validity of input
     return terunt_value
 
 def shapedefiner(family: list[int | float]) -> list:
+    """
+This function returns the shape of a givven list.
+"""
     if not isinstance(family, list):
         raise TypeError("Only lists are valid arguments")
     shape_x = len(family)
@@ -31,6 +34,9 @@ def shapedefiner(family: list[int | float]) -> list:
 
 
 def slice_me(family: list, start: int, end: int) -> list:
+    """
+This function return a new shape checks the input.
+"""
     myshape_before = shapedefiner(family)
     print(f"My shape is : ({myshape_before[0]}, {myshape_before[1]})")
     new_shape = family[start:end]
