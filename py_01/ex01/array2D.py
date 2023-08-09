@@ -36,5 +36,4 @@ def slice_me(family: list, start: int, end: int) -> list:
     new_shape = family[start:end]
     myshape_after = shapedefiner(new_shape)
     print(f"My shape is : ({myshape_after[0]}, {myshape_after[1]})")
-
     return new_shape
