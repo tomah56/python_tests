@@ -1,4 +1,5 @@
-def give_bmi(height: list[int | float], weight: list[int | float]) -> list[int | float]:
+def give_bmi(height: list[int | float],
+             weight: list[int | float]) -> list[int | float]:
     """
 This function calculates all BMI index in the givven lists.
 Returns a list of BMI values.

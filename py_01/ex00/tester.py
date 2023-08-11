@@ -1,5 +1,6 @@
 from give_bmi import give_bmi, apply_limit
 
+
 def main():
     try:
         height = [2.71, 1.15]
@@ -8,10 +9,9 @@ def main():
         bmi = give_bmi(height, weight)
         print(bmi, type(bmi))
         print(apply_limit(bmi, 26))
-    except (ValueError, TypeError)  as e:
+    except (ValueError, TypeError) as e:
         print("Caught an exception:", e)
 
 
 if __name__ == "__main__":
     main()
-
