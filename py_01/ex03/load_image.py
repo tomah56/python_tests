@@ -1,28 +1,18 @@
-import array
 import PIL
 from PIL import Image
-import numpy as np
 
 
-def ft_load(path: str) -> array:
+def ft_load(path: str) -> Image:
     """
-    This function returns an array from picture.
-"""
+    This function returns an opened image.
+    """
     try:
         if not path:
             raise ValueError("Path cannot be empty")
-        image = Image.open(path)
-        width, height = image.size
-        channels = len(image.getbands())
-        pixels = np.array(image.getdata())
-        print(f"The shape of image is: ({height}, {width}, {channels})")
-        # image.show()
-        # zoom_image = image[:400, :400, :]
-        # zoom_image.show()
+        return Image.open(path)
     except (PIL.UnidentifiedImageError, FileNotFoundError) as e:
         print("File Error:", e)
-        return []
+        return None
     except ValueError as e:
         print("ValueError:", e)
-        return []
-    return pixels
+        return None
