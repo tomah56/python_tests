@@ -18,8 +18,8 @@ def main():
         my_data = load("population_total.csv")
         df = my_data.copy()
         for col in df.columns[1:]:
-          df[col] = df[col].apply(convert_to_number)
-        plot(df, "Belgium", "France")
+            df[col] = df[col].apply(convert_to_number)
+        plot(df, "Belgium", "France", 2050)
     except (KeyError, Exception) as e:
         print("Error:", e)
 
