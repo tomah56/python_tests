@@ -23,7 +23,7 @@ def main():
         data_gdp = df.copy()
         for col in data_gdp.columns[1:]:
             data_gdp[col] = data_gdp[col].apply(convert_to_number)
-        plot(data_life, data_gdp, 1900)
+        plot(data_life, data_gdp, 2000)
     except (KeyError, Exception) as e:
         print("Error:", e)
 

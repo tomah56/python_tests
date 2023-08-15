@@ -19,7 +19,7 @@ def main():
         df = my_data.copy()
         for col in df.columns[1:]:
             df[col] = df[col].apply(convert_to_number)
-        plot(df, "Belgium", "France", 2050)
+        plot(df, "Iran", "Hungary", 2000)
     except (KeyError, Exception) as e:
         print("Error:", e)
 
