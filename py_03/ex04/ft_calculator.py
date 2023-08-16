@@ -23,3 +23,4 @@ class calculator:
         """Description of deviding vectors"""
         temp = [x - y for x, y in zip(V1, V2)]
         print("Sous Vector is:", temp)
+
