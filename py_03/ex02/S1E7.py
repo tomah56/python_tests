@@ -15,9 +15,11 @@ class Baratheon(Character):
         self.is_alive = False
 
     def __str__(self):
+        """Your docstring for __str__ Method"""
         return f"Vector: ('{self.family_name}', '{self.eyes}', '{self.hairs}')"
 
     def __repr__(self):
+        """Your docstring for __repe__  Method"""
         return f"Vector: ('{self.family_name}', '{self.eyes}', '{self.hairs}')"
 
 
@@ -39,7 +41,9 @@ class Lannister(Character):
         return Lannister(name, isalive)
 
     def __str__(self):
+        """Your docstring for __str__ Method"""
         return f"Vector: ('{self.family_name}', '{self.eyes}', '{self.hairs}')"
 
     def __repr__(self):
+        """Your docstring for __repr__ Method"""
         return f"Vector: ('{self.family_name}', '{self.eyes}', '{self.hairs}')"
