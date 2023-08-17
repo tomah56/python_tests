@@ -9,4 +9,23 @@ def generate_id() -> str:
 
 @dataclass
 class Student:
-#your code her
+    """Your docstring for Class"""
+    name: str
+    surname: str
+    active: bool = True
+    login: str = None
+    id: str = generate_id
+
+    def __post_init__(self):
+        self.login = self.create_login()
+
+    def create_login(self):
+        return self.name[0] + self.surname
+    # def __init__(self, name, surname):
+    #     """Your docstring for Constructor"""
+    #     self.name = name
+    #     self.nicknaem = surname
+    #     self.active = True
+    #     self.login = name[0] + surname
+    #     self.id = generate_id
+    #     self.print()

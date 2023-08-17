@@ -1,6 +1,5 @@
 def error_handler(number):
     """Error handeling function"""
-    print("Im here")
     if not isinstance(number, (int, float)):
         raise TypeError("arguments Must be a number")
 
@@ -38,6 +37,7 @@ def outer(x: int | float, function) -> object:
         error_handler(x)
         count = 0
         result = x
+
         def inner() -> float:
             nonlocal count, result
             result = function(result)
@@ -52,4 +52,3 @@ def outer(x: int | float, function) -> object:
         print(f"SyntaxError: {e}")
     except Exception as e:
         print(f"An error occurred: {e}")
-  
