@@ -99,3 +99,9 @@ def ft_statistics(*args: any, **kwargs: any) -> None:
         print(f"SyntaxError: {e}")
     except Exception as e:
         print(f"An error occurred: {e}")
+
+    # for i in range (10):
+    #     if i == 5:
+    #         break
+    # else:
+        
